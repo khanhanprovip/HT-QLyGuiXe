@@ -35,8 +35,8 @@ public class bienbandaluu extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         ss=new SystemService();
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
-        ngaygio.setText(LocalDateTime.now().format(formatter));
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm");
+        ngaygio.setText(vph.getNgaynhap().format(formatter));
         kh.setText(vph.getKh().getTenKH());
         sdt.setText(vph.getKh().getSodienThoai());
         cccd.setText(vph.getKh().getCccd());
