@@ -52,7 +52,7 @@ public class thongkeluotvipham extends javax.swing.JFrame {
     public void hienThiBang(String tungay, String denngay){
          tb.setColumnIdentifiers(new String[]{"Ngày giờ lập biên bản","Mã vé bị mất","Biển số xe","Loại xe","Giờ vào"});
          bangphat.setModel(tb);
-         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm");
          ves =ss.thongkeVeMat(tungay, denngay);
         for(viphamDTO ve:ves ) {
          tb.addRow(new Object[]{ve.getNgaynhap().format(formatter),ve.getPt().getVeVao(),ve.getPt().getBiensoXe(),
