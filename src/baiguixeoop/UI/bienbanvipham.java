@@ -297,7 +297,7 @@ public class bienbanvipham extends javax.swing.JFrame {
     private void xacnhanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_xacnhanActionPerformed
         // TODO add your handling code here:
         ss.ViPhamMatVe(var, var1, var2, var3);
-        if (var1.getLoaiVe().equals("Vé ngày")) {  
+        if (var1.getLoaiVe().equals("Vé ngày   ")) {  
              ss.xoaVeNgay(var1.getIDVe());
         } else { 
              ss.xoaVeThang(var1.getIDVe());
