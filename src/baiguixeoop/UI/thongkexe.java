@@ -47,7 +47,7 @@ public class thongkexe extends javax.swing.JFrame {
     public void hienThiBang(ArrayList<hoadonDTO> hds){
          tb.setColumnIdentifiers(new String[]{"Biển số xe","Loại xe","Giờ vào","Giờ ra","Mã số vé","Loại vé","Thành tiền"});
          bangxe.setModel(tb);
-         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm");
          //ArrayList<hoadonDTO> ves =ss.thongkeVeThang(tungay, denngay);
         for(hoadonDTO hd:hds ) {
          tb.addRow(new Object[]{hd.getBienSoXeOut(),hd.getLoaiXeOut(),hd.getGioVaoXeOut().format(formatter),hd.getTimeOut().format(formatter),hd.getVeXeOut(),hd.getLoaiVeXeOut(),hd.getThanhTien()});
